@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Signup from "./Signup";
 import Login from "./Login";
-
+import Footer from "./Footer";
 function App() {
   const [currentForm, setcurrentForm] = useState("login");
 
@@ -16,6 +16,8 @@ function App() {
       ) : (
         <Signup onFormSwitch={toggleForm} />
       )}
+
+      <Footer />
     </div>
   );
 }
